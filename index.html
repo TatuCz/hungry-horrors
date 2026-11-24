@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hungry Horrors - Play Free Online | Roguelite Deckbuilder Game</title>
-    <meta name="description" content="Play Hungry Horrors online for free! A unique roguelite deckbuilder where you cook and feed monsters from British & Irish folklore. Feed them full or die trying!">
-    <meta name="keywords" content="Hungry Horrors, roguelite deckbuilder, online game, free game, cooking game, monster feeding game, folklore game, pixel art game">
-    <meta name="author" content="Clumsy Bear Studio">
+    <title>Hungry Horrors Guide &amp; Official Demo | Beginner Tips</title>
+    <meta name="description" content="Find the official Hungry Horrors demo, learn how to start playing, and read beginner guidance and browser troubleshooting on this independent game guide.">
+    <meta name="author" content="hungryhorrors.online editorial">
     <meta name="robots" content="index, follow">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1576134717388484"
      crossorigin="anonymous"></script>
@@ -16,46 +15,19 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hungryhorrors.online/">
-    <meta property="og:title" content="Hungry Horrors - Play Free Online | Roguelite Deckbuilder">
-    <meta property="og:description" content="Feed monsters from British & Irish folklore with traditional dishes in this unique roguelite deckbuilder. Play free online now!">
-    <meta property="og:site_name" content="Hungry Horrors">
+    <meta property="og:title" content="Hungry Horrors Guide &amp; Official Demo | Beginner Tips">
+    <meta property="og:description" content="Find the official Hungry Horrors demo, learn how to start playing, and read beginner guidance and browser troubleshooting on this independent game guide.">
+    <meta property="og:site_name" content="Hungry Horrors Guide">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hungry Horrors - Free Online Roguelite Deckbuilder">
-    <meta name="twitter:description" content="Cook, explore, feed, loot, die, upgrade, and cook again. Play Hungry Horrors free online!">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hungry Horrors Guide &amp; Official Demo | Beginner Tips">
+    <meta name="twitter:description" content="Find the official Hungry Horrors demo, learn how to start playing, and read beginner guidance and browser troubleshooting on this independent game guide.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👹</text></svg>">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        apple: {
-                            gray: {
-                                50: '#fafafa',
-                                100: '#f5f5f7',
-                                200: '#e8e8ed',
-                                300: '#d2d2d7',
-                                400: '#86868b',
-                                500: '#6e6e73',
-                                600: '#424245',
-                                700: '#333336',
-                                800: '#1d1d1f',
-                                900: '#0d0d0d'
-                            },
-                            blue: '#0071e3',
-                            bluehover: '#0077ed'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/styles.css">
 
     <style>
         /* Custom styles */
@@ -67,26 +39,6 @@
             font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-        }
-
-        .game-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
-        }
-
-        .game-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 12px;
         }
 
         .feature-card {
@@ -105,65 +57,66 @@
             background-clip: text;
         }
 
-        /* Fullscreen button */
-        .fullscreen-btn {
-            transition: all 0.2s ease;
-        }
-
-        .fullscreen-btn:hover {
-            background-color: #0077ed;
-        }
-
-        @media (max-width: 768px) {
-            .game-container {
-                padding-bottom: 75%; /* Taller aspect ratio for mobile */
-            }
-        }
+        section[id] { scroll-margin-top: 7rem; }
+        a:focus-visible, summary:focus-visible { outline: 3px solid #0071e3; outline-offset: 4px; }
     </style>
 
-    <!-- Structured Data / Schema.org -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "VideoGame",
-        "name": "Hungry Horrors",
-        "description": "A roguelite deckbuilder where you cook and feed monsters from British & Irish folklore with traditional dishes.",
-        "genre": ["Roguelite", "Deckbuilder", "Strategy"],
-        "gamePlatform": ["Web Browser", "Windows", "macOS", "Linux"],
-        "applicationCategory": "Game",
-        "operatingSystem": "Any",
-        "author": {
-            "@type": "Organization",
-            "name": "Clumsy Bear Studio"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "ratingCount": "46",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "url": "https://hungryhorrors.online/"
+      "@type": "WebSite",
+      "@id": "https://hungryhorrors.online/#website",
+      "url": "https://hungryhorrors.online/",
+      "name": "Hungry Horrors Guide",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hungryhorrors.online/#webpage",
+      "url": "https://hungryhorrors.online/",
+      "name": "Hungry Horrors Guide & Official Demo | Beginner Tips",
+      "description": "Find the official Hungry Horrors demo, learn how to start playing, and read beginner guidance and browser troubleshooting on this independent game guide.",
+      "isPartOf": {
+        "@id": "https://hungryhorrors.online/#website"
+      },
+      "about": {
+        "@id": "https://hungryhorrors.online/#game"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://hungryhorrors.online/#game",
+      "name": "Hungry Horrors",
+      "url": "https://clumsy-bear-studio.itch.io/hungry-horrors",
+      "author": {
+        "@type": "Organization",
+        "name": "Clumsy Bear Studio",
+        "url": "https://clumsy-bear-studio.itch.io/"
+      },
+      "genre": [
+        "Deckbuilding",
+        "Roguelite"
+      ]
     }
+  ]
+}
     </script>
 </head>
 <body class="bg-apple-gray-100 text-apple-gray-800">
     <!-- Navigation -->
     <nav class="bg-white/80 backdrop-blur-xl sticky top-0 z-50 border-b border-apple-gray-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-14">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-3 py-3">
                 <a href="/" class="text-xl font-semibold text-apple-gray-800 hover:text-apple-gray-600 transition-colors">
                     Hungry Horrors
                 </a>
-                <div class="flex gap-6 text-sm font-medium">
-                    <a href="#play" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">Play</a>
+                <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm font-medium">
+                    <a href="#play" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">Demo</a>
                     <a href="#about" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">About</a>
-                    <a href="#features" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">Features</a>
+                    <a href="#faq" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">FAQ</a>
                     <a href="#how-to-play" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">How to Play</a>
                 </div>
             </div>
@@ -174,11 +127,12 @@
     <header class="bg-gradient-to-b from-white to-apple-gray-100 pt-16 pb-8 px-4">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-apple-gray-900 tracking-tight mb-6">
-                Hungry Horrors
+                Hungry Horrors Guide &amp; Official Demo
             </h1>
             <p class="text-xl sm:text-2xl text-apple-gray-500 font-medium max-w-2xl mx-auto">
-                Feed them full or die. A roguelite deckbuilder where you cook and appease monsters from British & Irish folklore.
+                A starting point for the folklore cooking deckbuilder: find the official demo, understand the basic loop, and troubleshoot browser play.
             </p>
+            <p class="text-sm text-apple-gray-500 mt-5">Independent fan guide. Not affiliated with Clumsy Bear Studio.</p>
         </div>
     </header>
 
@@ -190,11 +144,11 @@
                 <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm">
                     <h2 class="text-2xl font-semibold text-apple-gray-800 mb-4">Play the Official Hungry Horrors Demo</h2>
                     <div class="bg-apple-gray-900 rounded-xl px-6 py-12 sm:py-16 text-center text-white">
-                        <p class="text-sm font-semibold tracking-widest uppercase mb-4">Official browser demo · v1.0.4</p>
+                        <p class="text-sm font-semibold tracking-widest uppercase mb-4">Official browser demo on itch.io</p>
                         <h3 class="text-3xl font-bold mb-4">Ready to feed the horrors?</h3>
                         <p class="max-w-xl mx-auto text-lg mb-8">Play the free browser demo on Clumsy Bear Studio's official itch.io page. Click “Run game” there to start.</p>
                         <a href="https://clumsy-bear-studio.itch.io/hungry-horrors" target="_blank" rel="noopener noreferrer" class="inline-block bg-apple-blue hover:bg-apple-bluehover text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors">Play Official Demo ↗</a>
-                        <p class="text-sm mt-6">Opens itch.io in a new tab. Initial loading may take a few minutes.</p>
+                        <p class="text-sm mt-6">Opens itch.io in a new tab. Allow time for the first download to complete.</p>
                     </div>
                     <p class="text-sm text-apple-gray-400 mt-4 text-center">
                         Browser demo by Clumsy Bear Studio. The full game is available separately.
@@ -363,29 +317,29 @@
             </div>
         </section>
 
-        <!-- Controls Section -->
-        <section class="py-16 px-4 bg-apple-gray-50">
+        <section id="browser-help" class="py-16 px-4 bg-apple-gray-50">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-semibold text-apple-gray-900 text-center mb-8">Controls</h2>
-                <div class="bg-white rounded-2xl p-8 shadow-sm">
-                    <div class="grid sm:grid-cols-3 gap-6 text-center">
-                        <div>
-                            <div class="text-4xl mb-3">⌨️</div>
-                            <h3 class="font-semibold text-apple-gray-800 mb-1">Keyboard</h3>
-                            <p class="text-sm text-apple-gray-500">Full keyboard support for navigation and actions</p>
-                        </div>
-                        <div>
-                            <div class="text-4xl mb-3">🖱️</div>
-                            <h3 class="font-semibold text-apple-gray-800 mb-1">Mouse</h3>
-                            <p class="text-sm text-apple-gray-500">Click and drag to interact with cards and menus</p>
-                        </div>
-                        <div>
-                            <div class="text-4xl mb-3">🎮</div>
-                            <h3 class="font-semibold text-apple-gray-800 mb-1">Gamepad</h3>
-                            <p class="text-sm text-apple-gray-500">Controller support for comfortable gameplay</p>
-                        </div>
-                    </div>
+                <h2 class="text-3xl font-semibold mb-8">Before your first Hungry Horrors run</h2>
+                <div class="space-y-5 text-apple-gray-600">
+                    <p><strong>Start from the developer's page.</strong> Open the official demo using the button above, then choose “Run game” on itch.io. The game runs there; this guide does not host the game files.</p>
+                    <p><strong>Give the download time.</strong> In our browser check, the demo reached its welcome screen and main menu after the loading bar completed. That check confirms startup, not a complete playthrough. Loading time depends on your connection and device.</p>
+                    <p><strong>If the game stays blank:</strong> keep the official tab open while it loads. If the bar stops progressing, try a current desktop browser. The developer's page also lists downloadable versions if browser play fails.</p>
+                    <p><strong>Learn before chasing combinations.</strong> Follow the in-game introduction and read the descriptions of the dishes and the Horror in front of you. This page explains the basic loop; it does not provide a verified recipe tier list or monster preference database.</p>
                 </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-16 px-4 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-semibold mb-8">Hungry Horrors demo FAQ</h2>
+                <div class="space-y-4">
+                    <details class="bg-apple-gray-50 rounded-xl p-5"><summary class="font-semibold cursor-pointer">Where can I play the Hungry Horrors browser demo?</summary><p class="mt-3 text-apple-gray-600">Use <a class="text-apple-blue underline" href="https://clumsy-bear-studio.itch.io/hungry-horrors" target="_blank" rel="noopener noreferrer">Clumsy Bear Studio's official itch.io page</a> and select “Run game”. Our demo button opens that page in a new tab.</p></details>
+                    <details class="bg-apple-gray-50 rounded-xl p-5"><summary class="font-semibold cursor-pointer">Is the free demo the full game?</summary><p class="mt-3 text-apple-gray-600">No. The browser version is a demo. Check the developer's listing for its current contents and <a class="text-apple-blue underline" href="https://store.steampowered.com/app/3048840/Hungry_Horrors/" target="_blank" rel="noopener noreferrer">Steam for the full game's availability and price</a>.</p></details>
+                    <details class="bg-apple-gray-50 rounded-xl p-5"><summary class="font-semibold cursor-pointer">Why does the demo open on a different website?</summary><p class="mt-3 text-apple-gray-600">itch.io blocked direct embedding when we tested it on this website. Linking to the original developer page avoids a broken game frame and keeps you on the official distribution page.</p></details>
+                    <details class="bg-apple-gray-50 rounded-xl p-5"><summary class="font-semibold cursor-pointer">Why is Hungry Horrors taking a long time to load?</summary><p class="mt-3 text-apple-gray-600">The browser demo downloads game assets before it starts. Wait for the loading bar to finish. If it stops progressing, try another desktop browser or review the download options on the official page.</p></details>
+                    <details class="bg-apple-gray-50 rounded-xl p-5"><summary class="font-semibold cursor-pointer">Is this the official Hungry Horrors website?</summary><p class="mt-3 text-apple-gray-600">No. hungryhorrors.online is an independent fan guide. Clumsy Bear Studio develops Hungry Horrors. Game names and related rights belong to their respective owners.</p></details>
+                </div>
+                <p class="text-sm text-apple-gray-500 mt-8">Sources: <a class="text-apple-blue underline" href="https://clumsy-bear-studio.itch.io/hungry-horrors">official demo listing</a> and <a class="text-apple-blue underline" href="https://clumsy-bear-studio.itch.io/hungry-horrors/devlog/1733246/update-104">developer's v1.0.4 notes</a>. Site guidance updated November 25, 2026. Demo contents may change with developer updates.</p>
             </div>
         </section>
 
@@ -397,7 +351,7 @@
                     Jump into the game now and discover if you have what it takes to be the ultimate monster chef.
                 </p>
                 <a href="#play" class="inline-block bg-apple-blue hover:bg-apple-bluehover text-white font-medium px-8 py-4 rounded-full text-lg transition-colors">
-                    Play Now — It's Free
+                    Find the Official Demo
                 </a>
             </div>
         </section>
@@ -406,14 +360,15 @@
     <!-- Footer -->
     <footer class="bg-apple-gray-100 border-t border-apple-gray-200 py-8 px-4">
         <div class="max-w-5xl mx-auto">
+            <p class="text-sm text-apple-gray-500 mb-5">Independent fan guide, not an official Clumsy Bear Studio website.</p>
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
                 <div class="text-sm text-apple-gray-500">
-                    © 2024 <a href="https://hungryhorrors.online" class="hover:text-apple-gray-800 transition-colors">hungryhorrors.online</a>. Game by <a href="https://clumsy-bear-studio.itch.io/" target="_blank" rel="noopener" class="hover:text-apple-gray-800 transition-colors">Clumsy Bear Studio</a>.
+                    © 2026 <a href="https://hungryhorrors.online" class="hover:text-apple-gray-800 transition-colors">hungryhorrors.online</a>. Game by <a href="https://clumsy-bear-studio.itch.io/" target="_blank" rel="noopener" class="hover:text-apple-gray-800 transition-colors">Clumsy Bear Studio</a>.
                 </div>
                 <div class="flex gap-6 text-sm">
-                    <a href="#play" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">Play Game</a>
+                    <a href="#play" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">Official Demo</a>
                     <a href="#about" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">About</a>
-                    <a href="#features" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">Features</a>
+                    <a href="#faq" class="text-apple-gray-500 hover:text-apple-gray-800 transition-colors">FAQ</a>
                 </div>
             </div>
         </div>
