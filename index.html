@@ -188,23 +188,16 @@
         <section id="play" class="py-12 px-4">
             <div class="max-w-5xl mx-auto">
                 <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm">
-                    <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-2xl font-semibold text-apple-gray-800">Play Hungry Horrors Online</h2>
-                        <button onclick="toggleFullscreen()" class="fullscreen-btn bg-apple-blue text-white px-4 py-2 rounded-full text-sm font-medium">
-                            Fullscreen
-                        </button>
-                    </div>
-                    <div id="game-wrapper" class="game-container bg-apple-gray-900">
-                        <iframe
-                            id="game-iframe"
-                            src="https://html-classic.itch.zone/html/20075450/index.html?v=1793111033"
-                            allowfullscreen
-                            loading="lazy"
-                            title="Play Hungry Horrors - Free Online Roguelite Deckbuilder Game"
-                        ></iframe>
+                    <h2 class="text-2xl font-semibold text-apple-gray-800 mb-4">Play the Official Hungry Horrors Demo</h2>
+                    <div class="bg-apple-gray-900 rounded-xl px-6 py-12 sm:py-16 text-center text-white">
+                        <p class="text-sm font-semibold tracking-widest uppercase mb-4">Official browser demo · v1.0.4</p>
+                        <h3 class="text-3xl font-bold mb-4">Ready to feed the horrors?</h3>
+                        <p class="max-w-xl mx-auto text-lg mb-8">Play the free browser demo on Clumsy Bear Studio's official itch.io page. Click “Run game” there to start.</p>
+                        <a href="https://clumsy-bear-studio.itch.io/hungry-horrors" target="_blank" rel="noopener noreferrer" class="inline-block bg-apple-blue hover:bg-apple-bluehover text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors">Play Official Demo ↗</a>
+                        <p class="text-sm mt-6">Opens itch.io in a new tab. Initial loading may take a few minutes.</p>
                     </div>
                     <p class="text-sm text-apple-gray-400 mt-4 text-center">
-                        Use keyboard, mouse, or gamepad to play. Click inside the game to start.
+                        Browser demo by Clumsy Bear Studio. The full game is available separately.
                     </p>
                 </div>
             </div>
@@ -409,25 +402,8 @@
         </div>
     </footer>
 
-    <!-- Fullscreen Script -->
+    <!-- Navigation Script -->
     <script>
-        function toggleFullscreen() {
-            const wrapper = document.getElementById('game-wrapper');
-            if (!document.fullscreenElement) {
-                if (wrapper.requestFullscreen) {
-                    wrapper.requestFullscreen();
-                } else if (wrapper.webkitRequestFullscreen) {
-                    wrapper.webkitRequestFullscreen();
-                } else if (wrapper.msRequestFullscreen) {
-                    wrapper.msRequestFullscreen();
-                }
-            } else {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                }
-            }
-        }
-
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
